@@ -1,38 +1,514 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Dancing+Script:wght@500&family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Original+Surfer&display=swap");
+:root {
+  --main-heading: #d19e7f;
+  --main-logo: #000;
+  --text-color: #fff;
+  --para-color: #838282;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Global-style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Arimo", sans-serif !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  color: var(--main-logo);
+}
+p {
+  color: var(--para-color);
+  word-spacing: 0.2rem;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+button {
+  cursor: pointer;
+  outline: none;
+}
+.underline {
+  width: 5px;
+  height: 300px;
+  background: rgba(209, 181, 16, 1);
+  margin: 3rem;
+}
+.underline-2 {
+  width: 100%;
+  height: 2px;
+  background: rgba(209, 181, 16, 1);
+}
+.container {
+  max-width: 1000px;
+  padding: 2rem 0rem;
+  margin: 0 auto;
+}
+/*---- Global-style----*/
+.greet {
+  background-color: var(--main-heading);
+  color: var(--text-color);
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  letter-spacing: 0.4rem;
+  word-spacing: 1rem;
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 100;
+}
+/* nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-color);
+  border-bottom: 1px solid var(--para-color);
+  padding: 0.5rem 0rem;
+  position: fixed;
+  top: 6%;
+  width: 100%;
+  z-index: 99;
+}
+nav ul {
+  margin-left: 10rem;
+}
+nav li {
+  padding: 1rem 1.5rem 0rem 1rem;
+}
+nav li :hover {
+  color: rgba(209, 181, 16, 1);
+  transition: 0.4s ease;
+}
+nav .Logo a {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+.menu-icon {
+  display: none;
+}
+.list-item a {
+  text-transform: uppercase;
+}
+/*---- nav---- */
+/* Home */
+.home-img {
+  background-image: url(./assets/main_img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.btn {
+  font-size: 2.5rem;
+  width: 40%;
+  background: transparent;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  font-weight: lighter;
+  padding: 0.5rem 0rem;
+  letter-spacing: 0.4rem;
+  transform: translate(0%, -66%);
+}
+.btn:hover {
+  background-color: var(--text-color);
+  color: rgba(209, 181, 16, 1);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.heading {
+  color: var(--main-heading);
+  padding: 2rem 0rem;
+  text-align: center;
+  word-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  position: relative;
+}
+.heading span,
+.heading-2 span {
+  display: block;
+  margin-top: 0.5rem;
+}
+.heading-2 {
+  letter-spacing: 0.3rem;
+  font-size: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #7c7878;
+  padding: 1rem;
+  line-height: 2rem;
+}
+.carousel-img img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.slick-next {
+  right: 19% !important;
+  z-index: 9;
+}
+.slick-prev {
+  left: 16% !important;
+  z-index: 9;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 45px !important;
+}
+.slick-dots {
+  bottom: 15px !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+.owner,
+.Cart-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem;
+}
+.owner div {
+  width: 30%;
+  margin-left: 3rem;
+}
+.owner img {
+  border-radius: 50%;
+  width: 30%;
+  height: 400px;
+}
+.feature-img {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.feature-img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+video:focus {
+  outline: none;
+}
+.video-player {
+  width: 80%;
+  position: absolute;
+  transform: translate(12%, -100%);
+}
+.video-player i {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
+  font-size: 3rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.DisplayNone {
+  display: none;
+}
+.creation div,
+.Story-content,
+.Story-info,
+.Story-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.creation span {
+  padding: 0rem 2rem;
+  font-weight: bold;
+  color: var(--para-color);
+}
+.creation-carousel {
+  display: flex;
+  padding: 2rem;
+  transform: translate(12%, 0%);
+}
+.creation-carousel img {
+  width: 950%;
+  height: 600px;
+  object-fit: cover;
+}
+.info {
+  background-color: rgba(250, 250, 250, 0.8);
+  padding: 2rem 5rem;
+  transform: translate(-100%, 0%);
+}
+.info p {
+  color: #000;
+}
+.reviews,
+.product {
+  display: flex;
+  justify-content: space-around;
+}
+.reviews-content {
+  width: 25%;
+  padding: 2rem;
+  text-align: center;
+}
+.reviews-content h4,
+.contact h4 {
+  text-align: center;
+  padding: 2rem;
+  color: rgba(209, 181, 16, 1);
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+}
+.reviews img {
+  width: 60%;
+  height: 205px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.reviews-link {
+  color: rgba(209, 181, 16, 1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button,
+.footer button {
+  margin-bottom: 1rem;
+  width: 80%;
+  padding: 0.7rem;
+  border: 1px solid var(--main-heading);
+  font-size: 1rem;
+}
+form button {
+  cursor: pointer;
+  border: 2px solid var(--main-heading);
+  background-color: transparent;
+  color: var(--para-color);
+  font-size: 1.5rem;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+.footer li {
+  padding: 0.5rem 2rem;
+}
+.footer li :hover {
+  color: var(--main-heading);
+  transition: all 0.4s ease-in-out;
+}
+/*---- home---- */
+/* Story */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8rem;
+  overflow: hidden;
+}
+.Story-image {
+  width: 90%;
+  margin: 3rem 0rem;
+}
+.main-content img {
+  height: 500px;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card {
+  width: 100%;
+  background: var(--main-heading);
+  margin: 3rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+.Card div {
+  width: 90%;
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem 3rem;
+  margin: 2rem;
+}
+.Card h6 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.Card span {
+  display: block;
+}
+/*---- Story---- */
+/* Shop */
+.product {
+  flex-wrap: wrap;
+  padding: 0rem 2rem 0rem 2rem;
+}
+.product-content {
+  max-width: 370px;
+  width: 100%;
+  overflow: hidden;
+  height: 590px;
+  padding: 2rem 0rem 0rem 0rem;
+  margin: 2rem 2rem 0rem 1rem;
+}
+.product-content img {
+  width: 100%;
+  height: 100%;
+  max-height: 345px;
+  object-fit: cover;
+}
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-info span {
+  color: var(--main-heading);
+  font-weight: bold;
+}
+.product-content button {
+  width: 100%;
+  padding: 0.6rem;
+  color: #fff;
+  background-color: var(--main-heading);
+  border: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.size {
+  border: 1px solid var(--main-heading);
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+}
+/*---- Shop---- */
+/* Cart */
+.Cart-icon {
+  position: relative;
+}
+.Cart-icon a {
+  font-size: 2rem;
+  color: var(--main-heading);
+}
+.Cart-icon span {
+  background: rgba(209, 181, 16, 1);
+  position: absolute;
+  top: 16%;
+  right: 22%;
+  border-radius: 50%;
+  padding: 0.1rem 0.3rem;
+  color: #fff;
+}
+.Cart {
+  padding-top: 8rem;
+}
+.cart {
+  display: flex;
+}
+.cart-items {
+  flex: 1.75;
+}
+.item {
+  display: flex;
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
+  border: 1px solid silver;
+  margin-bottom: 2rem;
+}
+.item > img {
+  width: 175px;
+  height: 185px;
+  object-fit: cover;
+  margin: 2rem;
+}
+.item > img:hover {
+  transform: scale(1.04);
+}
+.item-info {
+  padding: 1.5rem;
+  width: 100%;
+  position: relative;
+}
+.item-name,
+.item-price {
+  margin-bottom: 20px;
+}
+.item-remove {
+  border: none;
+  position: absolute;
+  bottom: 8%;
+  right: 20px;
+  padding: 10px 25px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.item-remove:hover {
+  background-color: rgb(247, 82, 82);
+  transition: 0.4s ease-in-out;
+}
+.fa {
+  margin-right: 5px;
+}
+.cart-total {
+  flex: 0.25;
+  padding: 20px;
+  height: 240px;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+.cart-total p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.cart-total a {
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--main-heading);
+  color: white;
+}
+.amount {
+  border: 1px solid var(--main-heading);
+  width: 24%;
+}
+.amount button {
+  border: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: transparent;
+}
+/*---- Cart---- */

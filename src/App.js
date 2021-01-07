@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import "./MediaQuery.css";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
+import Story from "./pages/Story";
+import ContactNav from "./pages/ContactNav";
+import Cart from "./pages/Cart";
+import Navbar from "./components/Navbar";
+import Greeting from "./components/Greeting";
+import Details from "./components/Details";
+import {DataProvider } from "./global/DataProvider";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+      <div className="App">
+       <Router>
+        <Greeting/>
+        <Navbar/>
+            <Switch>
+              <Route path="/" exact component={Home} />
+            <Route path="/Shop" exact component={Shop} />
+            <Route path="/Shop/:id" exact component={Details} />
+              <Route
+                path="/Story"
+                exact
+                component={Story}
+              />
+              <Route path="/Contact" exact component={ContactNav} />
+              <Route path="/Cart" exact component={Cart} />
+              {/* <Route path="*" component={Error} /> */}
+            </Switch>
+          </Router>
+       </div>
+    </DataProvider>
   );
 }
 

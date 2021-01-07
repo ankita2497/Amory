@@ -1,0 +1,150 @@
+@media only screen and (max-width: 600px) {
+  .video-player,
+  .creation-carousel,
+  .home-img {
+    display: none;
+  }
+  .list-item {
+    flex-direction: column;
+    left: 1;
+    position: absolute;
+    transition: all 0.3s;
+    left: -80%;
+    top: 100%;
+  }
+  .list-item li {
+    padding: 2rem;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    left: 9%;
+  }
+  .active {
+    left: -160px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    background: red;
+    z-index: 10;
+    width: 50%;
+    top: 100%;
+  }
+  .greet {
+    letter-spacing: 0rem;
+    word-spacing: 0rem;
+    font-size: 1rem;
+  }
+  .carousel-img img {
+    height: 70vh;
+  }
+  .heading {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .heading-2 {
+    font-size: 19px;
+  }
+  #header,
+  .owner {
+    flex-direction: column;
+  }
+  .owner img {
+    width: 75%;
+  }
+  .owner div {
+    width: 75%;
+    margin-left: 0rem;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  .reviews-content {
+    width: 100%;
+  }
+  .Cart span {
+    top: 22%;
+    right: 28%;
+  }
+  .item > img {
+    width: 125px;
+  }
+  .amount {
+    width: 100%;
+  }
+  form {
+    margin-top: 2rem;
+  }
+  footer ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  nav ul {
+    margin-left: 3rem;
+  }
+  .owner div {
+    width: 45%;
+  }
+  .creation-carousel {
+    flex-direction: column;
+    padding: 0rem;
+    transform: translate(0%, 0%);
+  }
+  .creation-carousel img {
+    width: 100%;
+  }
+  .creation div {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+  .reviews-content {
+    width: 100%;
+  }
+  .reviews img {
+    height: 300px;
+    width: 40%;
+  }
+  .video-player {
+    transform: translate(12%, -203%);
+  }
+  .Cart span {
+    top: 8%;
+    right: 7%;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  nav {
+    top: 6%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .underline {
+    display: none;
+  }
+  .Story-content {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .Story img {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+  .Story-image {
+    flex-direction: column;
+  }
+  .Card {
+    flex-direction: column;
+  }
+  .cart {
+    flex-direction: column;
+  }
+}
