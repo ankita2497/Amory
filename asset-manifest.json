@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/amory/static/css/main.d218ad16.chunk.css",
+    "main.js": "/amory/static/js/main.7a22e842.chunk.js",
+    "main.js.map": "/amory/static/js/main.7a22e842.chunk.js.map",
+    "runtime-main.js": "/amory/static/js/runtime-main.0c4b9683.js",
+    "runtime-main.js.map": "/amory/static/js/runtime-main.0c4b9683.js.map",
+    "static/css/2.1edcedbf.chunk.css": "/amory/static/css/2.1edcedbf.chunk.css",
+    "static/js/2.d52e5e75.chunk.js": "/amory/static/js/2.d52e5e75.chunk.js",
+    "static/js/2.d52e5e75.chunk.js.map": "/amory/static/js/2.d52e5e75.chunk.js.map",
+    "index.html": "/amory/index.html",
+    "static/css/2.1edcedbf.chunk.css.map": "/amory/static/css/2.1edcedbf.chunk.css.map",
+    "static/css/main.d218ad16.chunk.css.map": "/amory/static/css/main.d218ad16.chunk.css.map",
+    "static/js/2.d52e5e75.chunk.js.LICENSE.txt": "/amory/static/js/2.d52e5e75.chunk.js.LICENSE.txt",
+    "static/media/carousel_1.f686c683.jpg": "/amory/static/media/carousel_1.f686c683.jpg",
+    "static/media/carousel_2.d8a55279.jpg": "/amory/static/media/carousel_2.d8a55279.jpg",
+    "static/media/carousel_3.0bdfaac9.jpg": "/amory/static/media/carousel_3.0bdfaac9.jpg",
+    "static/media/carousel_4.d83bf7c1.jpg": "/amory/static/media/carousel_4.d83bf7c1.jpg",
+    "static/media/carousel_5.f5382d9f.jpg": "/amory/static/media/carousel_5.f5382d9f.jpg",
+    "static/media/carousel_6.f4737951.jpg": "/amory/static/media/carousel_6.f4737951.jpg",
+    "static/media/App.css": "/amory/static/media/main_img.b99a84c0.jpg",
+    "static/media/owner_img.b224166f.jpg": "/amory/static/media/owner_img.b224166f.jpg",
+    "static/media/pillow_img1.8e358e7e.jpg": "/amory/static/media/pillow_img1.8e358e7e.jpg",
+    "static/media/pillow_img2.87fcf9f3.jpg": "/amory/static/media/pillow_img2.87fcf9f3.jpg",
+    "static/media/pillow_img3.fbc308d6.jpg": "/amory/static/media/pillow_img3.fbc308d6.jpg",
+    "static/media/pillow_img4.b019c08f.jpg": "/amory/static/media/pillow_img4.b019c08f.jpg",
+    "static/media/slick-theme.css": "/amory/static/media/slick.c94f7671.ttf",
+    "static/media/video.ae75d674.mp4": "/amory/static/media/video.ae75d674.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c4b9683.js",
+    "static/css/2.1edcedbf.chunk.css",
+    "static/js/2.d52e5e75.chunk.js",
+    "static/css/main.d218ad16.chunk.css",
+    "static/js/main.7a22e842.chunk.js"
+  ]
+}
