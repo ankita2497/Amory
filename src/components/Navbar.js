@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <ul className={open ? 'list-item active' : 'list-item'}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/amory">Home</Link>
           </li>
           <li>
             <Link to="/Shop">Shop <i className="fa fa-caret-down" /></Link>

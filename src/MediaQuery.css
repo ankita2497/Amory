@@ -24,10 +24,13 @@
     left: -160px;
     opacity: 1;
     transition: all 0.3s ease;
-    background: red;
+    background: #d19e7f;
     z-index: 10;
     width: 50%;
     top: 100%;
+  }
+  nav li :hover {
+    color: #fff;
   }
   .greet {
     letter-spacing: 0rem;
