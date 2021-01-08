@@ -135,7 +135,9 @@
   }
   .Story-content {
     flex-direction: column;
-    padding: 2rem;
+  }
+  .Story-info {
+    padding: 1.5rem;
   }
   .Story img {
     margin-right: 0rem;
